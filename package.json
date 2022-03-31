@@ -1,0 +1,14 @@
+{
+  "name": "buscaminas-api",
+  "version": "1.0.0",
+  "type":"module",
+  "author": {
+    "name": "Alan Fernández",
+    "email": "alan.fer09@gmail.com"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0"
+  }
+}
