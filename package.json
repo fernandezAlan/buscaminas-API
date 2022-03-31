@@ -1,14 +1,20 @@
 {
   "name": "buscaminas-api",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "author": {
     "name": "Alan Fernández",
     "email": "alan.fer09@gmail.com"
   },
+  "scripts": {
+    "start": "nodemon ./app.js"
+  },
   "dependencies": {
     "body-parser": "^1.19.2",
-    "express": "^4.17.3",
-    "morgan": "^1.10.0"
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

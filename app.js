@@ -1,21 +1,19 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import morgan from 'morgan'
+import config from './config/index.js'
 const app = express()
 
 //middlewares
 app.use(bodyParser.json())
-app.use(morgan('dev'))
-
 
 //routes
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello')
   })
 //app.use(routes)
 
 //server
 
-app.listen(3000,()=>{
-    console.log('server on port 3000')
+app.listen(config.PORT,()=>{
+     console.log(`App listening on http://${config.HOST}:${config.PORT}`);
 })
