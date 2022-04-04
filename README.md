@@ -3,7 +3,7 @@
 ## Script para iniciar el proyecto
  - npm run dev : Para iniciar el proyecto en modo de desarrollo.
  - npm run test : Para iniciar el testeo del proyecto.
- - npm start : Para inciar el proyecto en modo de producción.
+ - npm start : Para iniciar el proyecto en modo de producción.
 
 ## Anotaciones
 
