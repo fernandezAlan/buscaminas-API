@@ -7,14 +7,25 @@
     "email": "alan.fer09@gmail.com"
   },
   "scripts": {
-    "start": "nodemon ./app.js"
+    "dev": "cross-env NODE_ENV=development nodemon src/app.js",
+    "start": " cross-env NODE_ENV=production node src/app.js",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --detectOpenHandles"
   },
   "dependencies": {
     "body-parser": "^1.19.2",
     "dotenv": "^16.0.0",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "regenerator-runtime": "^0.13.9",
+    "sequelize": "^6.17.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2",
+    "uuid": "^8.3.2"
   }
 }
